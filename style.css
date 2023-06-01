@@ -1,0 +1,121 @@
+body{
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+:root{
+    --primary-color: #F8B185;
+    --secondary-color: #F67280;
+}
+.dark-theme{
+    --primary-color: #355C7D;
+    --secondary-color: #6C5B7B;
+    font-family: 'Shantell Sans', cursive;
+}
+
+p:hover{
+    text-decoration: underline dotted;
+    font-size: 17px;
+    font-style: italic;
+    text-shadow: 2px 2px var(--secondary-color);
+}
+p:active{
+    color: ivory;
+    text-decoration: underline dotted;
+    font-size: 17px;
+    font-style: italic;
+}
+.header{
+    background-color: var(--secondary-color);
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+}
+.back{
+    font-style: italic;
+}
+h3{
+    font-size: 19px;
+    color: #F67280;
+    text-shadow: 2px 2px white;
+}
+.near_pic{
+    position: absolute;
+    left: 400px;
+    top: 335px;
+    width: 830px;
+}
+a{
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+ /* .named_father{
+     position: relative;
+    left: 30px;
+    width: 320px;
+    height: 320px; 
+    display: flex;
+    justify-content: center;
+}  */
+/* .named{
+    display: flex;
+    justify-self: center;
+}
+.named:hover{
+    zoom: 90%;
+} */
+.named {
+    /* padding: 30px; */
+    transition: transform .2s; /* Animation */
+    width: 335px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  
+  .named:hover {
+    transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.list{
+    background-color: #C06C84;
+}
+.links{
+    background-color: #C06C84;
+    margin-top: 2px;
+}
+.lil{
+    height: 25px;
+    line-height: 25px;
+}
+.header_links{
+    font-size: 18px;
+    /* color: #F67280;
+    text-shadow: 2px 2px white; */
+    margin-top: 10px;
+    margin-left: 10px;
+    /* position: absolute; */
+    /* left: 30px;
+    bottom: 30px; */
+}
+#icon {
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 43px;
+    right: 40px;
+}

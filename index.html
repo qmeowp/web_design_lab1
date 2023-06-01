@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+    <title>Лабораторна 1</title>
+    <link rel="icon" href="heart.png" type="image/icon type" />
+</head>
+<body>
+    <img src="palette.png" alt="palette" id="icon">
+    <!-- <img id = "icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAACV0lEQVRoge1a0W4EIQhcm/7/L9sHE2MVcBjY9dLuPF1uERlRBPW6Xrz43yjah1rrLFpUYVxJUKGgBO8Y78+2O6J5xRfdUoPX+taEaNXwbX8upbhUgxNP1Nn+9HpjQ8CFySzDlP5pZVJrdXFIm0KjKaUU0AhR0uXz/DVAYKWBr4ocAtPwc0o4V2SugS220bn9PjmFjOHXzLID15bMQ2vAtiPC4elFXAZsJftvg8PJKJSSC31EGNWAOOGjCVwAh6cJjEbQCdyIR/eBBm+lYSeUyR7QekpZr6L+HAKIfaIMmPYZMo9OoSw/jDiwBibgVUSXH2UOl5RiQeOqyE/uAwZVfBTSCHjn9zpzuBVyficeTSc43EIgZYsFkUngjii5xfkpFHSXQKBrpNcl3ZAgc8wD9jkKPgS3HGyB0Kx0OdBKJUCbvLnAKhw5ViJzodxAGQlfPgJbu5FUzNvEhkUAPycDjYicqmtm8Ol0MPnJ6ndPYCxJc261pIMG77VAR0IUQmDUykgvhoxjCtmDBAbToA/X5vNGlnVFh59FI/qNr/ud2HXYrXWsDXx8ls4JiSDxO5iuOYwmOclzl97bUZA9QNxTjFWVdgSk6UT6ihb16QF0/PPeVIKO0CK49wpGK9UDR+rDDjw/haYQuNc0scjDh7W77ThaBIhj10htIGrYAl3Eht6sTXd1HaJBJhB88EMEFvqgTr3d14qB9OQ0WOKoYdSVJHJMgu/CGmYCdn47vWtYb+zowgppK7fCu+Fek0BGBKZiNL8XhR3dh1cRZFakZhe6PLrHv3jx1/ADQc13pKv9stMAAAAASUVORK5CYII="/> -->
+    <div class="header">
+    <h1 id="list">Кольорові формати в CSS</h1>
+    </div>
+    <div class="list">
+    <ul>
+        <li class="lil"><a href="#named_colors">Названі кольори</a></li>
+        <li class="lil"><a href="#rgb">RGB</a></li>
+        <li class="lil"><a href="#hex_codes">Шістнадцяткові коди</a></li>
+        <li class="lil"><a href="#hsl">HSL</a></li>  
+    </ul>
+    </div>  
+    <h3 id="named_colors">Названі кольори</h3>
+    <p>HTML містить 140 іменованих кольорів. Це спеціальні значення ключових слів, наприклад dodgerblue, hotpink і tomato. Розробник Anthony Lieuallen створив цю гарну демонстрацію, показуючи всі 140 іменованих веб-кольорів у колі:</p>
+    <div class="named_father"><img src="named_colors_50.png" alt="named colors" class="named"></div>
+    <div class="near_pic"><p>Іменовані кольори чудово підходять, коли вам потрібен колір-заповнювач. Наприклад, якщо ви створюєте прототип і потребуєте тимчасових значень, або якщо ви пишете навчальний контент. З точки зору читабельності, ніщо не зрівняється з color: red.
+        Мабуть, це само собою зрозуміло, але ми зазвичай не використовуємо іменовані кольори у виробничих програмах. 140 кольорів просто недостатньо — це навіть менше, ніж 8-бітна палітра кольорів, доступна на оригінальній консолі NES!
+        Що цікаво, названий колір gray насправді буде темнішим, ніж dark gray. Це пов’язано з тим, що 140 іменованих веб-кольорів отримано з різних місць, включаючи специфікацію HTML4, віконну систему X11 Unix і жахливий меморіал . Це суміш різних палітр, тому вона не завжди надзвичайно послідовна.</p></div>
+        <div class="back">
+        <span class="material-symbols-outlined">
+            undo
+        </span>
+        <a href="#list">Повернутися до змісту</a>
+        </div>
+    <h3 id="rgb">RGB</h3>
+    <p>Як і більшість кольорових форматів, rgb - це акронім. Він означає "червоний, зелений, синій".
+        З усіх кольорових форматів, про які ми сьогодні дізнаємося, rgbце найменш абстрактний. Дисплей вашого комп’ютера/телефону – це просто набір мільйонів крихітних червоних, зелених і синіх світлодіодів, зібраних у пікселі. Отже, rgbколірний формат дозволяє нам безпосередньо налаштовувати яскравість цих вогнів.
+        Кожне значення — червоне, зелене, синє — називається каналом . Кожен канал змінюється від 0 до 255. Змішуючи ці канали в різних кількостях, ми можемо створити понад 16 мільйонів різних кольорів.
+        Цікава особливість кольору RGB полягає в тому, що він заснований на фізиці світла. Ми можемо змішувати червоне, зелене та синє світло, щоб створити будь-який колір. Розкрутіть їх усіх до 255, і ми отримаємо білий колір. Встановіть їх усі на 0, і ми залишимося з чорним.
+        Формат rgbкольору також дозволяє нам вказати 4-те додаткове значення для альфа-каналу , щоб контролювати прозорість
+        Альфа-канал варіюється від 0(повністю невидимий) до 1(повністю непрозорий). Все, що знаходиться між ними, створює напівпрозорий колір.
+    </p>
+    <div class="back">
+        <span class="material-symbols-outlined">
+            undo
+        </span>
+        <a href="#list">Повернутися до змісту</a>
+        </div>
+    <h3 id="hex_codes">Шістнадцяткові коди</h3>
+    <p>Це, мабуть, найпоширеніший колірний формат в Інтернеті. Ось як це працює: 6-значний шістнадцятковий код містить три 2-значні значення, по одному для кожного каналу (червоний/зелений/синій). Замість використання 10-значної десяткової системи він використовує 16-значну шістнадцяткову систему.
+        По суті, шістнадцяткові коди такі ж, як значення RGB. В обох випадках ми надаємо значення для червоного, зеленого та синього кольорів.
+        У десятковій системі двозначне число може містити 100 можливих значень (10 × 10). З шістнадцятковим числом загальне число дорівнює 256 (16 × 16). І тому це дійсно схоже на те rgb(), де ми вказуємо значення від 0 до 255 для кожного каналу R/G/B.
+        І ось цікавий факт: ми можемо передати восьмизначний шістнадцятковий код, якщо хочемо включити альфа-канал. 8-значні шістнадцяткові коди широко реалізовані в сучасних браузерах із підтримкою 96% у всьому світі . На жаль, вони не підтримуються в IE.
+    </p>
+    <div class="back">
+        <span class="material-symbols-outlined">
+            undo
+        </span>
+        <a href="#list">Повернутися до змісту</a>
+        </div>
+    <h3 id="hsl">HSL</h3>
+    <p>Поки що обидва кольорові формати, які ми бачили, є різними «обгортками» однієї фундаментальної ідеї: передача певних значень для червоних/зелених/синіх каналів.
+        Однак це не єдиний спосіб думати про колір! Давайте подивимося на зовсім інший колірний формат: HSL.
+        Цей колірний формат приймає 3 різні значення:</p>
+        <ol>
+            <li><p>Відтінок: це пігмент, який ми хочемо використовувати. Дійсні значення в діапазоні від 0 до 360, і ми вказуємо його в градусах, оскільки шкала є круглою (0deg та 360deg позначає той самий червоний відтінок).</p></li>
+            <li><p>Насиченість: скільки пігменту містить колір? Дійсні значення в діапазоні від 0% до 100%. При 0% в кольорі немає пігменту, і це повністю відтінки сірого. На 100% колір максимально насичений.</p></li>
+            <li><p>Світлість: наскільки світлим/темним є колір? Дійсні значення в діапазоні від 0% до 100%. При 0% колір чорний як смола. При 100% колір чисто білий.</p></li>
+        </ol>
+    <p>Це, як правило, справді інтуїтивний спосіб думати про колір. Замість того, щоб безпосередньо керувати світловими значеннями R/G/B, ми перейшли до вищого рівня абстракції, який більше відповідає тому, як люди зазвичай думають про колір.
+        Як ми бачили з RGB, ми можемо вказати прозорість за допомогою / розділювача.
+    </p>
+    <div class="back">
+        <span class="material-symbols-outlined">
+            undo
+        </span>
+        <a href="#list">Повернутися до змісту</a>
+        </div>
+    <div class="links">
+    <h4 class="header_links">Посилання:</h4>
+   
+    <ul>
+        <li class="lil"><a href="https://www.joshwcomeau.com/css/color-formats/?ref=refind#introduction">Color Formats in CSS</a></li>
+        <li class="lil"><a href="https://www.w3schools.com/colors/colors_names.asp">W3School</a></li>
+        <li class="lil"><a href="https://htmlcolorcodes.com/">HTML color codes</a></li>
+    </ul>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+        }
+    </script>
+</body>
+</html>
